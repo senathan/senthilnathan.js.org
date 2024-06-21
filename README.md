@@ -9,3 +9,9 @@ Yes, we have successfully completed the production deployment yesterday and have
 In the future, we can work on a common solution to override the BAU process, aiming to automate the deployment of changes to production without manual intervention.
 
 Please let me know if you have any questions.
+
+
+Dependency: namea
+Issue: This legacy dependency requires a manual fix and cannot be updated automatically.
+Feature Branch: A specific feature branch has been created to address this fix.
+Deployment Plan: This manual fix will be deployed along with other features in the next release.
