@@ -1,17 +1,20 @@
 # senthilnathan.js.org
+Subject: Request for Approval: NTLM to Kerberos Migration Update
 
-Hi Nicola,
+Hi Manish,
 
-I hope this email finds you well.
+I hope you're doing well. I wanted to let you know about the recent changes we've made to switch from NTLM to Kerberos in our lower environments (UAT and Dev).
 
-Yes, we have successfully completed the production deployment yesterday and have also updated the evidence accordingly. Going forward, this pipeline will run in a scheduled manner, keeping vulnerability risks in mind. If a critical vulnerability arises, we will take the latest PR and push it to production immediately. For high vulnerabilities, we will address them within 60 days.
+Currently, UAT isn't accessible due to an issue with the Mysecurity component. Our team is working on fixing this. However, we've successfully tested the changes in the Dev environment, and everything seems to be working fine.
 
-In the future, we can work on a common solution to override the BAU process, aiming to automate the deployment of changes to production without manual intervention.
+Because we need to implement these changes before July 6th, we'd like your approval to proceed with testing in the Dev environment and eventually deploy them to the PROD environment.
 
-Please let me know if you have any questions.
+Let me know if you have any questions or need more details about the process.
 
+Thanks for your help.
 
-Dependency: namea
-Issue: This legacy dependency requires a manual fix and cannot be updated automatically.
-Feature Branch: A specific feature branch has been created to address this fix.
-Deployment Plan: This manual fix will be deployed along with other features in the next release.
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Contact Information]
