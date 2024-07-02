@@ -1,17 +1,17 @@
 # senthilnathan.js.org
-Subject: Request for Approval: NTLM to Kerberos Migration Update
+Subject: Clarification Needed About Recent Access Changes
 
 Hi Manish,
 
-I hope you're doing well. I wanted to let you know about the recent changes we've made to switch from NTLM to Kerberos in our lower environments (UAT and Dev).
+I hope you're doing well. I noticed something in the logs regarding recent access changes that I'd like to discuss.
 
-Currently, UAT isn't accessible due to an issue with the Mysecurity component. Our team is working on fixing this. However, we've successfully tested the changes in the Dev environment, and everything seems to be working fine.
+The logs show that access permissions have been updated, as seen in the ticket image. These updates seem to be for informational purposes and don't indicate any errors.
 
-Because we need to implement these changes before July 6th, we'd like your approval to proceed with testing in the Dev environment and eventually deploy them to the PROD environment.
+Our application currently manages user access using Active Directory (AD) groups specified in the view. To ensure everything aligns correctly, could you please check if there have been any changes to these AD groups on the database (DB) side?
 
-Let me know if you have any questions or need more details about the process.
+We mentioned this to RTB yesterday, but it's essential to confirm and verify these details.
 
-Thanks for your help.
+Thank you for your help with this.
 
 Best regards,
 
