@@ -1,15 +1,23 @@
 # senthilnathan.js.org
+import { AbstractControl, ValidatorFn } from '@angular/forms';
 
-Sure, here’s how you can deliver this information clearly in a Teams call with Andy:
+export function combinedValidator(pattern: string | RegExp): ValidatorFn {
+  return (control: AbstractControl): { [key: string]: any } | null => {
+    const value = control.value;
+    const errors: any = {};
 
----
+    // Required validation
+    if (!value) {
+      errors.required = true;
+    }
 
-"Hi Andy,
+    // Pattern validation
+    const regex = typeof pattern === 'string' ? new RegExp(pattern) : pattern;
+    if (value && !regex.test(value)) {
+      errors.pattern = true;
+    }
 
-Please let me know if you don't want me to work on the Akamai UI tasks. As you mentioned in this year's objectives, my focus should be on two main areas:
-
-1. Ensuring the UI is properly developed as a senior developer.
-2. Delivering the ATM renewal properly.
-
-I've shared the best options, and I believe these steps will significantly help in achieving our goals for the component."
-
+    // Return null if no errors, otherwise return the errors object
+    return Object.keys(errors).length ? errors : null;
+  };
+}
