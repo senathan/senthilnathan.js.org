@@ -133,3 +133,27 @@ export class AppComponent {
   }
 }
 
+
+Here’s a simplified version of your message for an email:
+
+---
+
+Subject: Request for Working from Abroad
+
+Hi Andy,
+
+I wanted to let you know that I will be traveling to India, but I would like to attend the SETS weekly session from there, as I don’t want to miss this opportunity. It was a great experience when the India leads were at Radbroke.
+
+I’ll be taking my laptop with me and will check my email and other tasks. I understand that working while traveling is generally against policy. Could you please share the procedure for applying to work from abroad for 3 days?
+
+I will be back on the morning of August 6th.
+
+Please let me know if you have any concerns.
+
+Best regards,
+
+[Your Full Name]
+
+---
+
+Feel free to adjust as needed before sending.
