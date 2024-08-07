@@ -1,24 +1,26 @@
 # senthilnathan.js.org
+Subject: Assistance Required for Account Removal and Transfer
 
-Certainly! Here’s a draft for your email to Tariq:
+Hi Tom,
 
----
+We are happy to proceed with removing the account detailed below from your safe. We will ensure that the account is moved to another safe, either CSM or CyberArk.
 
-Subject: Heads Up on My Delayed Return from India
+@James - We should connect with MyIT to obtain the password for the account where IAN is the owner. Could you please assist us with this?
 
-Hi Tariq,
+Additionally, we would like to know if the account mentioned below is being managed by IIP.
 
-I hope this email finds you well.
+Thank you for your assistance.
 
-As you know, I am currently in India to attend the funeral procedures for my Grandma. My flight from India was scheduled for today but has been delayed by 4 hours, so I'm uncertain about the exact time I will land in Manchester. Most likely, I will arrive by tomorrow.
-
-I wanted to give you a heads up regarding this delay. I will log my absence once I am back in the UK. Please let me know if you have any concerns.
-
-Thanks for your understanding.
-
-Best regards,  
+Best regards,
 [Your Name]
 
 ---
 
-Feel free to personalize it further if needed!
+Please provide any specific details about the account to be removed below this line for clarity.
+
+
+Hi Ben,
+
+I know you guys are using Windows system accounts with the prefix 'SVC-'. We would like to know how these are managed in either CSM or CyberArk. Are they unmanaged or managed?
+
+Thanks!
