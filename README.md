@@ -108,26 +108,45 @@ This detailed Jira ticket ensures that all aspects of the feature are well-docum
 
 
 
-Subject: Automation Feature Analysis: Certificate Bundle Update and Apaas Pod Management
+Here's a draft of the email you can send to your boss, Andy:
+
+---
+
+Subject: Approach for Automating Certificate Bundle Updates and Pod Deployment
 
 Hi Andy,
 
-I hope you're doing well. I wanted to share the approach I'm working on for automating the process of updating certificate bundles in Nexus and managing the pod spin-up in Apaas v4. Here's a brief overview:
+I wanted to share the approach I'm working on for automating the certificate bundle updates in Nexus and the corresponding pod deployments in Apaas v4. Below is a brief overview of the proposed solution:
 
-**Jenkins Pipeline Overview:**
+**Jenkins Pipeline:**
 
 **Input Parameters:**
-1. Read the common certificate to be updated.
-2. Select the action to be performed: add, update, or delete.
+1. Identify the common certificate that needs to be updated.
+2. Select the desired action: add, update, or delete.
 
-**Output Stages:**
+**Output:**
 
 **Stage 1: Certificate Management**
-- A Java library will handle the input and retrieve existing certificates from Nexus.
-- Based on the user's selected action (add, update, or delete):
-  - The existing JSON file is read.
-  - If adding or updating, the new certificates are included in the JSON.
-  - If deleting, the specified certificates are removed from the JSON.
-- The updated JSON is saved in the appropriate folder, which is then zipped and uploaded back to Nexus.
+1. We have a Java library that will take the inputs and check for the existing certificates in Nexus.
+2. The action specified by the user (add, update, or delete) will be performed:
+   - Read the existing JSON file.
+   - If adding or updating, the new certificates will be incorporated into the existing JSON.
+   - If deleting, the specified certificates will be removed from the JSON.
+3. The updated JSON file will be saved back to the folder.
+4. Finally, the folder will be zipped and uploaded back to Nexus.
+
+**Stage 2: Apaas Deployment**
+1. Log in to the Apaas pods.
+2. Spin down and spin up the pods for both the `certrenewal` and `certprov` applications.
+3. Log out and perform the same steps for other regions as needed.
+
+Please let me know if you have any feedback or if there's anything else you'd like me to include.
+
+Best regards,  
+[Your Name]
+
+---
+
+This email provides a clear and concise summary of your approach, making it easy for your boss to understand the steps involved.
 
 **Stage
